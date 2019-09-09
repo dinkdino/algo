@@ -4,6 +4,8 @@ struct Vertex<T: Hashable> {
     
     var data: T
     var index: Int
+    
+    var isVisited = false
 }
 
 extension Vertex: CustomStringConvertible {
