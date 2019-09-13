@@ -1,4 +1,5 @@
 import Foundation
+import XCTest
 
 var list = [ 10, -1, 3, 9, 2, 27, 8, 5, 1, 3, 0, 26 ]
 
@@ -15,3 +16,8 @@ var list = [ 10, -1, 3, 9, 2, 27, 8, 5, 1, 3, 0, 26 ]
 //var heap = Heap(array: list, sort: >)
 //heap.sort()
 
+
+
+let testObserver = TestObserver()
+XCTestObservationCenter.shared.addTestObserver(testObserver)
+LinkedListTests.defaultTestSuite.run()
